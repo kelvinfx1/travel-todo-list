@@ -5,6 +5,7 @@ import Form from './components/Form'
 import PackingList from './components/PackingList'
 import Stats from './components/Stats'
 import Item from './components/Item'
+import Splashscreen from './components/splashscreen'
 
 function App() {
   const [items, setItems] = useState([]);// all the new items to be stored here
@@ -42,6 +43,7 @@ function handleClearList() {
       items={items} onDeleteItem={handleDeleteItem} 
       onToggleItems={handleToggleItem}
       onClearList={handleClearList}/> {/* passing down states & functions as props*/}
+      
 
       <Stats numberOfItems={items}/>
     </div>

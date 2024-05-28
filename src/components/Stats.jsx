@@ -15,7 +15,7 @@ function Stats({ numberOfItems }) {
   //using ☝the received items props to derive the number of the items
   const numPacked = numberOfItems.filter((item)=> item.packed).length;
   //calculating☝ the number of items checked
-  const percentage = Math.round((numPacked / numItems) * 100);
+  const percentage = Math.round((numPacked  / numItems) * 100);
   //calculating☝ the percentage number of items checked
 
   return (

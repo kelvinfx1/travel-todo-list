@@ -8,7 +8,8 @@ function Item({ item, onDeleteItem, onToggleItems }) {
         <span style={item.packed ? { textDecoration :"line-through" } : {}}>
             {/* if packed property of item is true the inline-style will be applied */}
 
-            {item.quantity} {item.description}
+            {/* {item.quantity}  */}
+            {item.description}
         </span>
         <button onClick={()=> onDeleteItem(item.id)}>❌</button>
         {/* passing the handleDeletItem prop down here as a function iside another function */}
